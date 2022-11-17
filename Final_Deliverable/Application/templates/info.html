@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life Care - About Classification of Arrhythmia</title>
+    <link rel="shortcut icon" href="{{url_for('static', filename='images/fevicon.png' )}}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css' )}}" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous">
+    </script>
+    <style>
+        .banner {
+            margin: 60px;
+            width: auto;
+            height: 300px;
+            /* Setup */
+            background-color: #C6D3D4;
+            box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+            display: flex;
+            flex-direction: row;
+            padding: 50px;
+        }
+
+        .bannerText h1 {
+            font-size: 3vw;
+            color: #8c52ff;
+            font-weight: 600;
+        }
+
+        .bannerText p {
+            text-indent: 50px;
+            color: #777777;
+            font-size: 1.2vw;
+            font-weight: normal
+        }
+
+        .bannerText img {
+            width: 10vw;
+            margin-right: 20px;
+        }
+
+        .bannerImg img {
+            margin-left: 90px;
+            width: 350px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Navigation Bar-->
+        <div class="nav">
+            <div class="logo">
+                <a href="/"><img src="static/images/logo.png" alt="Website Title" style="width:190px" /></a>
+            </div>
+            <div class="links">
+                <a href="/home">Home</a>
+                <a href="/info" class="mainLink">info</a>
+                <a href="/upload" class="btn1">Predict</a>
+            </div>
+        </div>
+        <!--Landing Page-->
+        <div class="landing">
+            <div class="landingText" data-aos="fade-up" data-aous-duration="1000">
+                <h1>
+                    Classification of Arrhythmia
+                    <span style="color: #8c52ff; font-size: 4vw">Prediction</span>
+                </h1>
+                <h3>
+                    The World Health Organization (WHO) states that cardiovascular diseases (CVDs) are currently the leading cause of death. Over 17.7 million individuals worldwide, or roughly 31% of all fatalities in 2017, perished from CVDs, and more than 75% of these deaths took place in low- and middle-income nations. Any unusual deviation from the regular cardiac beats is referred to as an arrhythmia, a representative kind of CVD. Arrhythmia can take many different forms, such as tachycardia, ventricular fibrillation, premature contraction, and atrial fibrillation. A single arrhythmia heartbeat may not have a significant effect on a person's life, but repeated arrhythmia beats can have fatal consequences.
+                </h3>
+            </div>
+            <div class="landingImage" data-aos="fade-down" data-aous-duration="2000">
+                <img src="static/images/banner_img.jpg" alt="bannerImg" style="width: 500px; height:360px" />
+            </div>
+        </div>
+        <!--<div class="banner">
+            <div class="bannerText" data-aos="fade-right" data-aous-duration="1000">
+                <h1>
+                    Left Bundle Branch
+                </h1>
+                <p>a delay in electrical impulse blockage to the left side of the heart. It can be more difficult for the heart to efficiently pump blood through the circulatory system when there is a left bundle branch block.</p>
+                <p>Most individuals lack symptoms. If symptoms do show up, they may include dizziness or a slow heartbeat.</p>
+                <p>It is necessary to treat any underlying conditions, such as heart disease, if they exist. A pacemaker can both stop the heart from stopping and alleviate symptoms in people with heart failure..</p>
+            </div>
+            <div class="bannerImg" data-aos="fade-up" data-aous-duration="1000">
+                <img src="static/images/LBB.svg" alt="" />
+            </div>
+        </div>
+        <div class="banner">
+            <div class="bannerText" data-aos="fade-right" data-aous-duration="1000">
+                <h1>
+                    Normal
+                </h1>
+                <p>It should be noted that the heart is beating normally, with a sinus rhythm of 60 to 100 beats per minute (specifically 82 bpm). as well as stop death.</p>
+                <p>On this recording, all of the significant interstices fall within acceptable bounds.</p>
+                <p>When compared to adult ECG patterns, children's typical ECG patterns are very different. anges.</p>
+            </div>
+            <div class="bannerImg" data-aos="fade-up" data-aous-duration="1000">
+                <img src="static/images/normal.svg" alt="" />
+            </div>
+        </div>
+        <div class="banner">
+            <div class="bannerText" data-aos="fade-right" data-aous-duration="1000">
+                <h1>
+                    Premature Atrial Contraction
+                </h1>
+                <p>Premature arterial contraction typically has no known cause and poses no health risks. Premature artrial contractions typically occur naturally and are not a sign of heart disease.</p>
+                <p>However, some individuals with PACs go on to develop related heart conditions, such as cardiomyopathy (a weakened heart muscle) or coronary heart disease.</p>
+            </div>
+            <div class="bannerImg" data-aos="fade-up" data-aous-duration="1000">
+                <img src="static/images/PAC.jpg" alt="" />
+            </div>
+        </div>
+        <div class="banner">
+            <div class="bannerText" data-aos="fade-right" data-aous-duration="1000">
+                <h1>
+                    Premature Ventricular Contractions
+                </h1>
+                <p>Extra, abnorma heartbeats that begininone of the
+                    Heart's two lower chambers.</p>
+                <p>Premature ventricular contractions (PVCs) occur
+                    in most people at some point. Causes may include certain
+                    medication, alcohol, some illegal drugs, caffeine,
+                    tobacco, excercise or anxiety.</p>
+                <p>
+                    PVCs often cause no symtoms. When symptoms do
+                    occur, they feel like a flip-flop or skipped-beat
+                    sensation in the chest.
+                </p>
+                <p>Most people with isolated PVCs and an otherwise
+                    normal heart don't need treatment. PVCs occurring
+                    continuously serious cardiac than 30 seconds is a
+                    potentially serious cardiac condition known as
+                    ventriclular tachycardia.</p>
+            </div>
+            <div class="bannerImg" data-aos="fade-up" data-aous-duration="1000">
+                <img src="static/images/PVC.jpg" alt="" />
+            </div>
+        </div>
+        <div class="banner">
+            <div class="bannerText" data-aos="fade-right" data-aous-duration="1000">
+                <h1>
+                    Right Bundle Branch
+                </h1>
+                <p>Right bundle branch block is associated with
+                    structural changes from strech or ischemia to
+                    the myocardium. It can also occur
+                    iatorgenically from certain common cardiac
+                    precedures, such as right heart catheterization.</p>
+                <p>Although there is no significant association
+                    with cardiovascular risk factors, the presence
+                    with cardiovascular risk factors, the presence
+                    of a right bundle branch block is a predictor of
+                    mortality in myocardial infarction, heart
+                    failure, and certain heart blocks.</p>
+                <p>In asymptomatic patients, isolated right bundle
+                    brach block typically does not need further
+                    evaluation.</p>
+            </div>
+            <div class="bannerImg" data-aos="fade-up" data-aous-duration="1000">
+                <img src="static/images/RBB.svg" alt="" />
+            </div>
+        </div>
+        <div class="banner">
+            <div class="bannerText" data-aos="fade-right" data-aous-duration="1000">
+                <h1>
+                    Ventricular Fibrillation
+                </h1>
+                <p>A life-threatening heart rhythm that results in a
+                    rapid, inadeuate heartbeat.</p>
+                <p>Ventricular fibrillation (VF) is a rapid,
+                    Life-threatening heart rhythm starting in the bottom
+                    chambers of the heart. It can be triggered by a heart attack.</p>
+                <p>Because the heart doesn't pump adequately during
+                    ventricular fibrillation, sustained VF can cause
+                    low blood pressure, losso f consciousness of death.</p>
+                <p>Emergency treatment includes immediate
+                    defibrillation with a n automated external
+                    defibrillator (AED) and cardiopulmonary
+                    resuscitation(CPR). Long-term therapy includes
+                    implantable defibrillators and medcations to
+                    prevent recurrence.</p>
+            </div>
+            <div class="bannerImg" data-aos="fade-up" data-aous-duration="1000">
+                <img src="static/images/VF.png" alt="" />
+            </div>
+        </div>-->
+        <div class="footer">
+            <h1>CardiacCare</h1>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
